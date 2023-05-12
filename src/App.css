@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Noto+Serif+KR:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@font-face {
+  font-family: 'GangwonEdu_OTFLightA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFLightA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 1px, 0);
+    animation-duration: 2s;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 1px, 0);
+    animation-duration: 0.8s;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate__animated animate__fadeIn {
+  animation-name: fadeIn;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+body {
+  background-color: #FFFFFF;
+  text-align: center;
+  align-items: center;
+  font-size: 22px;
+  font-family: 'GangwonEdu_OTFLightA';
+}
+
+.AccountCopyIcon {
+  display: flex;
+  justify-content: right;
+  height: 30px;
+  cursor: pointer;
+}
+
+.AccountInfo {
+  display: none;
+  text-align: center;
+  width: 80%;
+  padding-top: 20px;
+}
+
+.AccountInfoBtn {
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.AccountInfoText {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.AccountTextArea {
+  color: #685C5D;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.AccountTitle {
+  color: #D47C88;
+  /*color: indianred;*/
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.BrideTable {
+  font-size: 20px;
+  display: inline;
+  position: relative;
+  float: left;
+  width: 48%;
+  padding-right: 5px;
+  padding-bottom: 1.5px;
+  line-height: 1.8;
+}
+
+.Calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CalendarPic {
+  height: 260px
+}
+
+.CallIcon {
+  height: 56px;
+  vertical-align: bottom;
+}
+
+.CloseButton {
+  padding: 15px;
+  height: 25px;
+  float: right;
+  opacity: 0.6;
+}
+
+.CloseButton:active {
+  opacity: 1;
+}
+
+.CloseButton:hover {
+  cursor: pointer;
+}
+
+.Contacts {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.ContactParentsText {
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.ContactTable {
+  display: block;
+  height: 20vh;
+  padding-top: 10vh;
+}
+
+.ContentsTextArea {
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.ContentsDescTextArea {
+  font-size: 16px;
+}
+
+.ContentsDescLightTextArea {
+  font-size: 15px;
+  color: burlywood;
+}
+
+.CopyText {
+  cursor: pointer;
+}
+
+.Daughter {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.FlowerIcon {
+  height: 100px;
+}
+
+.Footer {
+  /*background-color: floralwhite;*/
+  background-color: #EBD7D6;
+  color: #5B5454;
+  font-size: 16px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.Gallery {
+  clear: both;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.GreetingImage {
+  vertical-align: center;
+  /*animation: fadein 0.8s;*/
+  animation-name: fadeIn;
+}
+
+.GreetingInfo {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.GreetingMessage {
+  vertical-align: center;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+  line-height: 1;
+  background-color: #E4CBCA;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.GreetingMessageTitle {
+  color: #FAFAF9;
+  font-size: 25px;
+}
+
+.GreetingSnap {
+  width: 100%;
+}
+
+.GroomTable {
+  font-size: 20px;
+  display: inline;
+  position: relative;
+  float: left;
+  width: 48%;
+  padding-left: 5px;
+  padding-bottom: 1.5px;
+  line-height: 1.8;
+}
+
+.Image {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+}
+
+.ImageSlide {
+  height: 100%;
+}
+
+.ImageSlideItem {
+  height: calc(95% - 45px);
+  width: 100%;
+  position: relative;
+  float: left;
+}
+
+.ImageViewWindow {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.90);
+}
+
+.KakaoPayIcon {
+  height: 30px;
+}
+
+.KakaoShare {
+  background-color: #C1B3B4;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  height: 45px;
+  display: flex;
+  justify-content: right;
+  cursor: pointer;
+}
+
+.KakaoShareButton {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  color: #C1B3B4;
+}
+
+.KakaoShareIcon {
+  height: 35px;
+  padding: 5px;
+}
+
+.KakaoShareText {
+  line-height: 60px;
+  font-size: 18px;
+  color: #FAFAF9;
+  vertical-align: center;
+}
+
+.Location {
+  clear: both;
+  vertical-align: center;
+  padding-top: 2vh;
+  padding-bottom: 3vh;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.LocationDetails {
+  padding-top: 1vh;
+}
+
+.LocationMap {
+  display: flex;
+  justify-content: center;
+  height: 40vh;
+  padding-top: 5vh;
+}
+
+.NextButton {
+  width: 30px;
+  height: 30px;
+  opacity: .9;
+}
+
+.NextButton:active {
+  opacity: 1;
+}
+
+.NextButtonPanel {
+  right: 10px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.PrevButton {
+  width: 30px;
+  height: 30px;
+  opacity: .9;
+}
+
+.PrevButton:active {
+  opacity: 1;
+}
+
+.PrevButtonPanel {
+  left: 10px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.PrevButtonPanel, .NextButtonPanel {
+  background-color: transparent;
+  border: none;
+  margin-top: 45px;
+  height: calc(100% - 45px);
+  width: 10%;
+  float: left;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PrevButtonPanel:active, .NextButtonPanel:active {
+  opacity: 1;
+}
+
+.PrevButtonPanel:hover, .NextButtonPanel:hover {
+  cursor: pointer;
+}
+
+.ShowGiftButton {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  border: 1px solid rgba(232, 198, 203, 0.6);
+  width: 86%;
+  height: 45px;
+  background-color: #FFFFFF;
+  /*color: #D47C88;*/
+  color: indianred;
+  font-size: 18px;
+  line-height: 45px;
+  font-family: 'GangwonEdu_OTFLightA';
+}
+
+.ShowGiftButton:active {
+  background-color: #F3E4E6;
+}
+
+.ShowGiftButton:hover {
+  cursor: pointer;
+}
+
+.ShowMoreButton {
+  margin-top: 1vh;
+  border: 1px solid rgba(232, 198, 203, 0.6);
+  width: 100%;
+  height: 40px;
+  background-color: #FFFFFF;
+  /*color: #D47C88;*/
+  color: indianred;
+  font-size: 18px;
+  line-height: 40px;
+  font-family: 'GangwonEdu_OTFLightA';
+}
+
+.ShowMoreButton:active {
+  background-color: #F3E4E6;
+}
+
+.ShowMoreButton:hover {
+  cursor: pointer;
+}
+
+.SmsIcon {
+  height: 56px;
+  vertical-align: bottom;
+}
+
+.SonDaughter {
+  font-size: 15px;
+}
+
+.Splitter {
+  /*background-color: #E7EDF0;*/
+  background-color: #FFFFFF;
+  /*background-color: floralwhite;*/
+  min-height: 3vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.TextArea {
+  color: #5B5454;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.Thanks {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.Thumbnail {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.ThumbnailItem {
+  display: inline;
+  position: relative;
+  float: left;
+  width: 33%;
+  /*box-sizing: border-box;*/
+  padding-right: 0.15%;
+  padding-left: 0.15%;
+  padding-bottom: 1.5px;
+}
+
+.ThumbnailItem:hover {
+  cursor: pointer;
+}
+
+.ThumbnailTable {
+  display: inline-block;
+  /*position: relative;*/
+  line-height: 0;
+}
+
+.ThumbnailWrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.TitleEng {
+  color: #D47C88;
+  font-family: "Caveat";
+  font-size: 36px;
+  height: 14px;
+}
+
+.TitleKor {
+  color: #948278;
+  font-size: 22px;
+}
+
+.TitleUnderline {
+  border: none;
+  height: 1px;
+  width: 20vh;
+  color: rgba(232, 198, 203, 0.6);
+  background-color: #F3E4E6;
+}
+
+.Transportation {
+  padding-top: 1vh;
+}
+
+.TransportationSongdo {
+  border: none;
+  color: #C69F8A;
+  background-color: #FFFFFF;
+  font-size: 19px;
+  font-family: 'GangwonEdu_OTFLightA';
+}
+
+.TransportationSongdo:hover {
+  cursor: pointer;
+}
+
+.TransportationType {
+  color: #C69F8A;
+  font-size: 19px;
+}
+
+.YeokSamStn {
+  width: 70%;
+}

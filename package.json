@@ -1,0 +1,44 @@
+{
+  "name": "invitation_card",
+  "version": "0.1.0",
+  "homepage": "http://sunglaejisoo.github.io",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "animate.css": "^4.1.1",
+    "react": "^16.8.0",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^16.8.0",
+    "react-naver-maps": "^0.0.13",
+    "react-scripts": "5.0.0",
+    "react-snowfall": "^1.2.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
